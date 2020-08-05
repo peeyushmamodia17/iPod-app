@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f1f1f1;
+}
+/* ---- app styling ---- */
+.App{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 3% auto;
+    background-color: #8f6b6b;
+    box-shadow: inset 10px 10px 50px #a18d8d;
+    
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(75%, transparent), to(rgba(199, 187, 187, 0.5)));
+    /* -webkit-box-reflect: below 0 linear-gradient(transparent, white); */
+}
+/* ---- wheel styling ---- */
+.container{
+    position: relative;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.outer-circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 5px 20px black;
+}
+.menu-btn{
+    position: absolute;
+    top: 12px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.play-pause-btn{
+    position: absolute;
+    bottom: 10px; 
+    height: 30px;
+    width: 30px;
+}
+.prev-btn{
+    position: absolute;
+    left: 10px;
+    height: 24px;
+    width: 30px;
+}
+.next-btn{
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+.inner-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.menu-btn, .play-pause-btn, .prev-btn, .next-btn:hover, .inner-circle{
+    cursor: pointer;
+}
+
+/* ---- screen styling ---- */
+.screen-container{
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid black; */
+    /* margin: 0 auto; */
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-image: url(https://images.axios.com/TJZo5yqHzpf3CX8_A4ah21Hy3UM=/0x0:5000x2813/1920x1080/2018/04/11/1523479224025.jpg);
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px black;
+}
+.menu{
+    height: 195px;
+    width: 140px;
+    border-radius: 5px;
+    background-color: #f33d3d;
+}
+.heading{
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.menu-list{
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 7px;
+}
+.menu-list li{
+    position: relative;
+    padding: 5px 5px 5px 5px;
+}
+.menu-list li:hover{
+    background-color: #421e39;
+    cursor: pointer;
+    color: #dedede;
+    font-weight: bold;
+}
+.menu-list li::after{
+    position: absolute;
+    right: 2px;
+    content: '>';
+    font-size: large;
+    color: #b9b8b8;
+}
+.select{
+    background-color: #421e39;
+    color: #dedede;
+    font-weight: bold;
+}
+.unselect{
+    /* background-color: white; */
+    color: black;
+}
