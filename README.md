@@ -17,11 +17,6 @@ This project use `ZingTouch` to move the mouse in a circular fashion and select 
 * On clicking in the center wheel (grey circle) will redirect to the selected menu.
 
 
-### Demo
-
-![demo](/gif/ipodApp.gif)
-
-
 ## Getting Started
 1. Clone the project.
 2. Go to folder.
