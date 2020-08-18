@@ -1,7 +1,9 @@
 # iPod-app
-It's an ipod music app. This project was build using React, Html and CSS.
+It's an ipod music app. 
 
 This project is an UI of an iPod.
+
+This project was build using React, Html and CSS.
 
 This project use `ZingTouch` to move the mouse in a circular fashion and select options.
 
